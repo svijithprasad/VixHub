@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+        <style type="text/css">
+            .to-fit {
+                margin: 0 auto;
+            }
+            
+section {
+    padding: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.cards {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color:   rgb(26, 24, 24);    
+    transition: all 0.4s ease;
+    
+}
+.cards:hover{
+    transform: scale(1.2);
+}
+
+
+.title {
+    font-size: 20px;
+    
+}
+
+.desc {
+    font-size: 15px;
+    background-color: #eae2b7;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility: hidden;
+}
+
+p {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif ;
+
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+@media (max-width: 768px) {
+    .cards {
+        width: 100%;
+        min-height: 450px;
+        margin: 50px 0;
+    }
+
+    .cards img {
+        height: 300px;
+    } 
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">AnimeFlix</div>  
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index1.html" >Home</a>
+                    </li>
+                    <li>
+                        <a href="list.html" class="active">Anime</a>
+                    </li>
+                    <li>
+                        <a href="others.html">Others</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+<script src="script.js"></script>
+
+
+        </div>
+        <section>
+            <a href="fmab.html"><div class="cards">
+                <img src="fmab.jpg" alt="FULL METAL ALCHEMIST: Brotherhood" width="200px">
+                <p><span class="title">Fullmetal Alchemist:</span></p><p><span>Brotherhood</span></p>
+            </div></a>
+
+            <a href="demonslayer.html"><div class="cards">
+                <img src="demonslayer.jpg" alt="Demon Slayer" width="189px">
+                <p><span class="title">Demon Slayer:</span></p><p><span> Kimetsu no Yaiba</span></p>
+            </div></a>
+
+            <a href="aot.html"><div class="cards">
+                <img src="aot.jpg" alt="Attack on Titan" width="185px">
+                <p><span class="title">Attack on Titan</span></p>
+            </div></a>
+
+            <a href="jujutsukaisen.html"><div class="cards">
+                <img src="jujutsukaisen.jpg" alt="Jujutsu Kaisen" width="200px">
+                <p><span class="title">Jujutsu Kaisen</span></p>
+            </div></a>
+
+            <a href="hxh.html"><div class="cards">
+                <img src="hxh.webp" alt="Hunter X Hunter" width="200px">
+                <p><span class="title">Hunter X Hunter</span></p>
+            </div></a>
+        </section>
+        <section>
+            <a href="chainsaw.html"><div class="cards">
+                <img src="chainsaw.png" alt="chainsawMan" width="200px">
+                <p><span class="title">Chainsaw Man</span></p>
+            </div></a>
+
+            <a href="onepunch.html"><div class="cards">
+                <img src="one punch.jpg" alt="One Punch Man" width="200px">
+                <p><span class="title">One Punch Man</span></p>
+            </div></a>
+
+            <a href="onepiece.html"><div class="cards">
+                <img src="one piece.jpg" alt="One piece" width="200px">
+                <p><span class="title">One piece</span></p>
+            </div></a>
+
+            <a href="neongenesis.html"><div class="cards">
+                <img src="neongenesis.jpg" alt="Neon Genesis Evangelion" width="200px">
+                <p><span class="title">Neon Genesis</span></p><p><span>Evangelion</span></p>
+            </div></a>
+
+            <a href="myhero.html"><div class="cards">
+                <img src="myhero.jpg" alt="My Hero Academia" width="200px">
+                <p><span class="title">My Hero Academia</span></p>
+            </div></a>
+        </section>
+            
+        <footer>
+            <span>Website By S Vijith Prasad</span>
+        </footer>
+    </body>
+</html>

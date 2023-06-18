@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}    
+body{
+    background-color: rgb(26, 24, 24); 
+    
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-image: url("dbqaiup-418e858d-0625-4931-9fa2-9b2787503735.png");
+    position: relative;
+    z-index: 999;
+
+}
+    section{
+    padding: 100px 200px;
+}
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(26, 24, 24);
+    
+}
+.homepage .homecontent{
+    z-index: 888;
+    color: white;
+    width: 70%;
+    margin-top: 50px;
+    
+}
+.homepage .homecontent h1{
+    font-size: 4em;
+    font-weight: 1000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.8)
+   
+   
+
+}
+.homepage .homecontent h1 span{
+    font-size: 2.9em;
+    font-weight: 1000;
+    
+}
+.homepage .homecontent p{
+    margin-bottom: 65px;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.homepage .homecontent a{
+    background-color: greenyellow;
+    color: #000000;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    
+}
+.homepage .icons{
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5 ease;
+}
+
+.homepage .icons a{
+    color: white;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+
+}
+
+.homepage .icons a:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.homepage .icons a:hover{
+    transform: scale(1.3);
+}
+
+.homepage video{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+   background-color: greenyellow;
+   width: 100%;
+   color: black;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 800;
+    
+}
+.bg{
+    width: 100%;
+    background: url("https://media.giphy.com/media/V69LhUggYIg6qmKUoD/giphy.gif");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.logo{
+    font-family: "Sofia";
+    font-size: 3.5em;
+    font-weight: 1000;
+    color: black;
+    text-shadow: 100vh;
+    text-shadow: #000000;
+    
+    
+
+}
+.hamburger{
+    display: none;
+    cursor: pointer; 
+     
+
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    font-weight: bolder;
+    display: block;
+    color:  black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color:#11101b;
+    background: greenyellow;
+}
+.nav-bar ul li a.active{
+color: #11101b;
+background: greenyellow;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 4px;
+        background: #000000;
+        margin: 6px 0;
+        transition: 0.3s ease;
+    }
+   
+    .nav-bar{
+        z-index: 999;
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #000000;
+        background-image: url("dropdownav.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        overflow: hidden;   
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        
+    }
+       
+    
+        .hamburger.active .line:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+    }
+@media (max-width: 1040px){
+    section{
+        padding: 100px 20px;
+    }
+    .homepage .icons{
+        right: 15px;
+    }
+}
+  
+
+
+        
+
+    
